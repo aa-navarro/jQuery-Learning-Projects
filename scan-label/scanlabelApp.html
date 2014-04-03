@@ -1,0 +1,52 @@
+<head>
+
+
+<style>
+
+input{
+	display: block;
+}
+
+form{
+	margin: 0 auto;
+	width: 50%;
+}
+
+input[type = "submit"] {
+	margin-top: 20px;
+	padding: 10px;
+}
+
+</style>
+
+</head>
+<script type="text/javascript" src="jQuery2.0.3.js"></script>
+
+
+<body>
+
+<form name="payment">
+
+<label id="lastN">Last Name</label><input id="lastName" type="text" name="lastName">
+<label id="firstI">First Initial</label></label><input id="firstInitial" type="text" name="firstInitial">
+<label id="accountN">Account Number</label><input id="accountNumber" type="text" name="accountNumber">
+<label id="paymentD">Payment Date</label><input id="paymentDate" type="text" name="paymentDate">
+
+<input id="elBoton" type="submit" value="Create">
+
+</form>
+<script>
+
+var lastN = $("#lastName").val();
+var firstI = $("#firstInitial").val();
+var accountN = $("accountNumber").val();
+var paymentD = $("paymentDate").val();
+
+$( "#elBoton" ).click(function( event) {
+	event.preventDefault();
+	alert(lastN + firstI + "_Acct_" + accountN + "-" + paymentDate);
+	
+});
+</script>
+
+</body>
