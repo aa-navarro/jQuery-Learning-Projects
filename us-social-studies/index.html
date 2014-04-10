@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Guess the capitals of all 50 states!</title>
+    <!-- Scripts -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="scripts/scripts.js"></script>
+  </head>
+  <body>
+    <h1>Guess the capitals of all 50 states!</h1>
+    <h2>The name of the state is <span class="state-name"></span> What is the name of the capital?</h2>
+
+    <form id ="captureUserAnswer">
+      <fieldset>
+        <label>Enter the name of the capital of <span class="state-name"></span>.</label>
+        <input type = "text" name = "capitalAnswer" id = "capitalAnswer" />
+        <button type = "submit">Submit</button>
+        <button type = "reset" id = "playAgain">Play Again</button>
+      </fieldset>
+    </form>
+    <div id = "feedback"></div>
+  </body>
+</html>
