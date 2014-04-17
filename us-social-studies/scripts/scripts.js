@@ -160,17 +160,19 @@
         //$("#feedback").text("The correct answer is " + correctAnswer + "and the user entered: " + userAnswer);  
 
         if (userAnswer == correctAnswer) {
-          righty += 1; 
-          $("#feedback").text("Ding, ding, ding! Correctomundo, mi amigo! You have a streak of " + righty + "correct answers.");        
+          righty += 1;
+          wrongy = 0; 
+          $("#feedback").text("Ding, ding, ding! Correctomundo, mi amigo! You have a streak of" + " " + righty + " correct answers.");        
         } else {
           wrongy += 1;
-          $("#feedback").text("Go hit the books, ya bum! You have a streak of " + wrongy + "wrong  answers.");
+          righty = 0;
+          $("#feedback").text("Go hit the books, ya bum! You have a streak of" + " " + wrongy + " wrong  answers.");
         }
       });
 
       $('#playAgain').click(function(){
         loadState(stateDisplay);
-      });
+              });
     });
     // // Ask the computer to generate a random number from 1 to 48
 
