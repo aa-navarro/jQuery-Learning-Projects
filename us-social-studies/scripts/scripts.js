@@ -5,7 +5,7 @@
  */
 
     //
-    // SATE AND CAPITOLS
+    // STATES AND CAPITALS
     //------------------------------------------------------------------------------------------//
     // @description Application data for user interaction.
     
@@ -63,8 +63,8 @@
     var stateCapitalNames = [
     "Montgomery",
     "Juneau",
-    "Little Rock",
     "Phoenix",
+    "Little Rock",
     "Sacramento",
     "Denver",
     "Hartford",
